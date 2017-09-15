@@ -1,0 +1,32 @@
+﻿<Window x:Class="SendSpaceGui.Windows.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SendSpaceGui" 
+        
+        mc:Ignorable="d"
+        Title="Settings" Height="177" Width="409" DataContext="">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="124*"/>
+			<ColumnDefinition Width="277*"/>
+		</Grid.ColumnDefinitions>
+
+		<Label Grid.Row="0" Grid.Column="0" Content="SendSpace Api Key:" VerticalAlignment="Center" HorizontalAlignment="Right" Height="26" Margin="0,17" Width="114"/>
+		<Label Grid.Row="1" Grid.Column="0" Content="Proxy endpoint:" VerticalAlignment="Center" HorizontalAlignment="Right" Height="26" Margin="0,16,0,17" Width="93"/>
+		<TextBox Grid.Row="0" Grid.Column="1" Text="testtext1" Width="180" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<TextBox Grid.Row="1" Grid.Column="1" Text="testtext2" Width="180" Height="30" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+		<StackPanel Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Center">
+			<Button Content="OK" Width="50" Margin="5"/>
+			<Button Content="Cancel" Width="50" Margin="5"/>
+		</StackPanel>
+
+	</Grid>
+</Window>

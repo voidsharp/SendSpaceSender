@@ -1,0 +1,14 @@
+﻿<Application x:Class="SendSpaceGui.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SendSpaceGui"
+			 StartupUri="Windows/MainWindow.xaml">
+	<Application.Resources>
+		<ContextMenu DataContext="{Binding}" x:Key="MainIconContextMenu">
+			<MenuItem Header="Activate"/>
+			<MenuItem Header="Settings"/>
+			<Separator/>
+			<MenuItem Header="Exit"/>
+		</ContextMenu>
+	</Application.Resources>
+</Application>
